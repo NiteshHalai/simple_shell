@@ -13,7 +13,7 @@ char** split_line(char *line) {
     char **tokens = malloc(capacity * sizeof(char*));
 
     char *delimiters = " \t\r\n";
-    char *token = my_strtok(line, delimiters);
+    char *token = strtok(line, delimiters);
 
     while (token != NULL) {
         tokens[length] = token;
@@ -24,7 +24,7 @@ char** split_line(char *line) {
             tokens = realloc(tokens, capacity * sizeof(char*));
         }
 
-        token = my_strtok(NULL, delimiters);
+        token = strtok(NULL, delimiters);
     }
 
     tokens[length] = NULL;
