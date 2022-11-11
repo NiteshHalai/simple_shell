@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -62,7 +63,7 @@ int main()
   char **tokens;
 
     while (true) {
-        printf("> ");
+        new_putchar('$');
         line = read_line();
         tokens = split_line(line);
 
