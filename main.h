@@ -8,5 +8,7 @@
 
 int new_putchar(char);
 char* read_line();
+void exec(char **args);
+char** split_line(char *line);
 
 #endif
