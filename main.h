@@ -11,5 +11,6 @@ char* read_line();
 void exec(char **args);
 char** split_line(char *line);
 char *lsh_read_line(void);
+char* my_strtok(char* s, char* delm);
 
 #endif
