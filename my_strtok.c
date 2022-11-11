@@ -8,6 +8,8 @@ char* my_strtok(char* s, char* delm)
     
     char *W;
     int i;
+    int k;
+    int j;
         
     static int currIndex = 0;
     if(!s || !delm || s[currIndex] == '\0')
