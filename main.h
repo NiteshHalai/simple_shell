@@ -7,6 +7,6 @@
 #include <math.h>  
 
 int new_putchar(char);
-
+char* read_line();
 
 #endif
