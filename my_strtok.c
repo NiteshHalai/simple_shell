@@ -5,11 +5,15 @@
 
 char* my_strtok(char* s, char* delm)
 {
+    
+    char *W;
+    int i;
+        
     static int currIndex = 0;
     if(!s || !delm || s[currIndex] == '\0')
     return NULL;
-    char *W = (char *)malloc(sizeof(char)*100);
-    int i = currIndex, k = 0, j = 0;
+    W = (char *)malloc(sizeof(char)*100);
+    i = currIndex, k = 0, j = 0;
 
     while (s[i] != '\0'){
         j = 0;
