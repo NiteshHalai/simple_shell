@@ -2,11 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void exit() 
-{
-    exit(0);
-}
-
 char* read_line() {
     char *line = NULL;
     size_t buflen = 0;
