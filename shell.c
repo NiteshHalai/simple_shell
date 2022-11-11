@@ -2,7 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+void kash_exit(char **args) {
+    exit(0);
+}
 
 char* kash_read_line() {
     char *line = NULL;
