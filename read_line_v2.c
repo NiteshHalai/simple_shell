@@ -1,3 +1,5 @@
+#define LSH_RL_BUFSIZE 1024
+
 #include "main.h"
 #include <stdbool.h>
 #include <stdio.h>
