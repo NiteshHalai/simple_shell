@@ -6,16 +6,6 @@
 #include <stdarg.h>
 #include <math.h>  
 
-struct builtin {
-    char *name;
-    void (*func)(char **args);
-};
-
-struct builtin builtins[] = {
-    {"exit", kash_exit},
-    {"cd", kash_cd},
-};
-
 int new_putchar(char);
 char* read_line();
 void exec(char **args);
