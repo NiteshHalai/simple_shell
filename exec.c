@@ -8,6 +8,15 @@
 #include <string.h>
 
 void exec(char **args) {
+    
+        
+    for (int i = 0; i < kash_num_builtins(); i++) {
+       if (strcmp(args[0], builtins[i].name) == 0) {
+            builtins[i].func(args);
+            return;
+        }
+    }
+
     pid_t child_pid = fork();
 
     if (child_pid == 0) {
