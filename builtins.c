@@ -13,7 +13,6 @@ struct builtin {
 };
 
 struct builtin builtins[] = {
-    {"help", kash_help},
     {"exit", kash_exit},
     {"cd", kash_cd},
 };
