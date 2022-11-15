@@ -7,6 +7,6 @@
 #include <unistd.h>
 #include <string.h>
 
-void kash_exit(char **args) {
+void kash_exit() {
     exit(0);
 }
