@@ -16,6 +16,7 @@ int main()
 
     while (true) {
         new_putchar('$');
+        new_putchar(' ');
         line = lsh_read_line();
         tokens = split_line(line);
 
