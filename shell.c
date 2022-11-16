@@ -14,6 +14,7 @@ int main()
   char *line;
   char **tokens;
 
+  int ret = 0;
     while (true) {
         new_putchar('$');
         new_putchar(' ');
@@ -27,5 +28,6 @@ int main()
         free(tokens);
         free(line);
     }
+  return (ret);
 }
 
