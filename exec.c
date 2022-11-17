@@ -14,7 +14,6 @@ struct builtin {
 
 struct builtin builtins[] = {
     {"exit", kash_exit},
-    {"cd", kash_cd},
 };
 
 int kash_num_builtins() {
