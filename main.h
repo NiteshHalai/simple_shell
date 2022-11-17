@@ -1,20 +1,19 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef SIMPLE_SHELL
+#define SIMPLE_SHELL
 
-#include <unistd.h>
+#include <stdio.h>
 #include <stdlib.h>
-#include <stdarg.h>
-#include <math.h>  
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <string.h>
 
-int new_putchar(char);
-char* read_line();
-void exec(char **args);
-char** split_line(char *line);
-char *lsh_read_line(void);
-char* my_strtok(char* s, char* delm);
-void kash_cd(char **args);
-void kash_exit();
-int kash_num_builtins();
+int _strlen(const char *s);
+char *_strcpy(char *dest, const char *src);
+int _putchar(char c);
+void _puts(char *str);
+unsigned int nbr_spaces(char *s);
+char **stringToTokens(char *str);
 
 #endif
 
